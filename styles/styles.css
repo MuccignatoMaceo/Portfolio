@@ -64,6 +64,7 @@ h4{
 p{
     font-size: 2rem;
     line-height: 1.5em;
+
 }
 
 
@@ -71,6 +72,16 @@ p{
     color:#fff;
     font-size: 3rem;
     font-weight: bold;
+    margin-bottom: 100px;
+
+}
+
+.slider-content p a{
+    text-decoration: none;
+    color: #ffffff;
+    box-sizing: border-box; 
+    background-color: rgb(180, 90, 44);
+
 }
 
 .projects {
@@ -139,7 +150,7 @@ p{
 }
 
 .skills{
-    background: #722e2e;
+    background: #ffffff;
     border-radius: 50px;
     padding: 20px;
     box-sizing: border-box;
@@ -259,7 +270,7 @@ p{
     top: 0;
     left: 0;
     width: 100%;
-    background: rgb(114, 52, 21);
+    background: rgb(71, 32, 13);
     z-index: 999;
     padding: 10px 0; /* 🔥 Supprime le padding horizontal */
     box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.7);
@@ -303,7 +314,7 @@ p{
 }
 
 .header-menu li a:hover {
-    background-color: rgba(73, 34, 14, 0.315);
+    background-color: rgba(43, 20, 8, 0.315);
 }
 
 .header-menu li:last-child a{
