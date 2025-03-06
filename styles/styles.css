@@ -76,12 +76,18 @@ p{
 
 }
 
-.slider-content p a{
+.slider-content p a {
+    display: inline-block; /* Assure le bon fonctionnement du scale */
     text-decoration: none;
     color: #ffffff;
     box-sizing: border-box; 
     background-color: rgb(180, 90, 44);
+    padding: 10px 20px;
+    transition: transform 0.3s ease;
+}
 
+.slider-content p a:hover {
+    transform: scale(1.2); /* Zoom au survol */
 }
 
 .projects {
@@ -100,7 +106,10 @@ p{
 
 .flex{
     display: flex;
+    justify-content: center; /* Centre horizontalement */
+    text-align: center; /* Centre le texte */
 }
+
 
 .dark{
     background: #000;
