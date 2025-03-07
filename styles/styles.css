@@ -19,8 +19,8 @@ body {
 .slider{
     width:100%;
     min-height:80vh;
+    background: rgb(180, 90, 44);
     aspect-ratio:16/9;
-    background:#000;
     position: relative;
 
 }
@@ -330,6 +330,50 @@ p{
     background-color: rgb(180, 90, 44);
 }
 
+/*Partie pour projets*/
+
+.sliderVideo{
+    width:100%;
+    min-height:80vh;
+    background: rgb(34, 16, 7);
+    aspect-ratio:16/9;
+    position: relative;
+
+}
+
+
+
+.video-overlay {
+    position: relative; /* Active le positionnement pour les éléments enfants */
+    width: 100%;
+    max-width: 1200px; /* Ajuste la largeur maximale si nécessaire */
+    margin: 0 auto; /* Centre le bloc */
+}
+
+/* La vidéo prend tout l'espace */
+.video-overlay video {
+    width: 100%; /* Adapte la taille de la vidéo */
+    height: auto; /* Conserve les proportions */
+    margin-top: 300px;
+}
+
+/* Texte superposé */
+.video-text {
+    position: absolute; /* Superpose le texte à la vidéo */
+    bottom: 0; /* Place le texte au bas de la vidéo */
+    left: 0; /* Aligne le texte à gauche */
+    width: 100%; /* Prend la largeur complète de la vidéo */
+    color: white; /* Couleur du texte */
+    font-size: 2rem; /* Taille du texte */
+    font-weight: bold; /* Texte en gras */
+    padding: 20px; /* Espace intérieur pour l'encadré */
+    box-sizing: border-box; /* Inclut le padding dans la largeur */
+    background: rgba(63, 62, 62, 0.6); /* Fond semi-transparent */
+}
+
+
+
+
 /*@media(max-width:810px){
     .header{
         display: none;
@@ -367,5 +411,4 @@ p{
     .boxed{
         max-width: 90%;
     }
-}
-
+} */
