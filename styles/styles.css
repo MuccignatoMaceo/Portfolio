@@ -332,6 +332,10 @@ p{
 
 /*Partie pour projets*/
 
+.oculi-page {
+    background: rgb(34, 16, 7); /* Fond du slider */
+}
+
 .sliderVideo{
     width:100%;
     min-height:80vh;
@@ -354,7 +358,7 @@ p{
 .video-overlay video {
     width: 100%; /* Adapte la taille de la vidéo */
     height: auto; /* Conserve les proportions */
-    margin-top: 300px;
+    margin-top: 200px;
 }
 
 /* Texte superposé */
@@ -369,6 +373,38 @@ p{
     padding: 20px; /* Espace intérieur pour l'encadré */
     box-sizing: border-box; /* Inclut le padding dans la largeur */
     background: rgba(63, 62, 62, 0.6); /* Fond semi-transparent */
+}
+
+.text-box-container {
+    display: flex;             /* Affiche les deux cadres côte à côte */
+    justify-content: center;   /* Centre les cadres horizontalement */
+    gap: 40px;                 /* Espacement entre les cadres */
+    margin: 50px 0;           /* Augmente la marge pour éviter le chevauchement */
+    clear: both;               /* Empêche le chevauchement avec d'autres sections */
+    position: relative;        /* Assure un positionnement stable */
+    z-index: 2;                /* Place les encadrés au-dessus si besoin */
+}
+
+
+.text-box {
+    width: 25%;               /* Largeur de chaque encadré */
+    padding: 30px;            /* Espace intérieur */
+    border-radius: 15px;      /* Coins arrondis */
+    background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    color: white;             /* Texte blanc */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Ombre douce */
+    
+}
+
+.text-box h3 {
+    margin-bottom: 20px;      /* Espacement sous le titre */
+    font-size: 2rem;          /* Taille du titre */
+    text-align: center;       /* Centre le texte */
+}
+
+.text-box p {
+    font-size: 1.5rem;        /* Taille du texte */
+    line-height: 1.8;         /* Espacement des lignes */
 }
 
 
