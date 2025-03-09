@@ -66,7 +66,13 @@ p{
     line-height: 1.5em;
 
 }
+.spaced {
+    margin-bottom: 40px; /* Espace personnalisé pour ces paragraphes */
+}
 
+.spaced100 {
+    margin-bottom: 100px; /* Espace personnalisé pour ces paragraphes */
+}
 
 .slider-content p{
     color:#fff;
@@ -342,7 +348,7 @@ p{
     background: rgb(34, 16, 7);
     aspect-ratio:16/9;
     position: relative;
-
+    margin: 0 0 32px;
 }
 
 
@@ -358,7 +364,7 @@ p{
 .video-overlay video {
     width: 100%; /* Adapte la taille de la vidéo */
     height: auto; /* Conserve les proportions */
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 /* Texte superposé */
@@ -383,6 +389,7 @@ p{
     clear: both;               /* Empêche le chevauchement avec d'autres sections */
     position: relative;        /* Assure un positionnement stable */
     z-index: 2;                /* Place les encadrés au-dessus si besoin */
+    
 }
 
 
@@ -396,6 +403,16 @@ p{
     
 }
 
+.box-large {
+    min-height: 450px; /* Hauteur minimale plus grande */
+
+}
+
+/* Petit encadré */
+.box-small {
+    height: 230px; /* Hauteur minimale plus petite */
+
+}
 .text-box h3 {
     margin-bottom: 20px;      /* Espacement sous le titre */
     font-size: 2rem;          /* Taille du titre */
@@ -405,6 +422,20 @@ p{
 .text-box p {
     font-size: 1.5rem;        /* Taille du texte */
     line-height: 1.8;         /* Espacement des lignes */
+}
+
+.new-section {
+    padding: 100px 20px; /* Ajoute un espace intérieur */
+    margin-top: 400px;   /* Espace entre l'Accueil et cette section */
+    color: white;        /* Texte blanc */
+    text-align: center;  /* Centre le texte */
+    box-sizing: border-box; /* Garantit que le padding n'agrandit pas la section */
+}
+
+.projectsimg img{
+    width: 750px; /* Taille des icônes */
+    height: 500px;
+    object-fit: contain;
 }
 
 
