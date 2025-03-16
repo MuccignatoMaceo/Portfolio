@@ -382,29 +382,33 @@ p{
 }
 
 .text-box-container {
-    display: flex;             /* Affiche les deux cadres côte à côte */
-    justify-content: center;   /* Centre les cadres horizontalement */
-    gap: 40px;                 /* Espacement entre les cadres */
-    margin: 50px 0;           /* Augmente la marge pour éviter le chevauchement */
-    clear: both;               /* Empêche le chevauchement avec d'autres sections */
-    position: relative;        /* Assure un positionnement stable */
-    z-index: 2;                /* Place les encadrés au-dessus si besoin */
-    
+    display: flex;
+    flex-wrap: wrap; /* Permet aux boîtes de passer en colonne si nécessaire */
+    justify-content: center;
+    gap: 40px;
+    margin: 50px 0;
+    clear: both; /* Empêche le chevauchement avec la section suivante */
+    position: relative;
 }
 
-
 .text-box {
-    width: 25%;               /* Largeur de chaque encadré */
-    padding: 30px;            /* Espace intérieur */
-    border-radius: 15px;      /* Coins arrondis */
-    background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
-    color: white;             /* Texte blanc */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Ombre douce */
-    
+    width: auto; /* Laisse la boîte s’adapter à son contenu */
+    max-width: 40%; /* Empêche la boîte de devenir trop grande */
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.box-large, .box-small {
+    height: auto !important;
+    min-height: 0 !important;
 }
 
 .box-large {
-    min-height: 450px; /* Hauteur minimale plus grande */
+    height: auto; /* Permet aux boîtes de s'adapter au contenu */
+    min-height: unset; /* Supprime la hauteur minimale imposée */
 
 }
 
@@ -426,7 +430,7 @@ p{
 
 .new-section {
     padding: 100px 20px; /* Ajoute un espace intérieur */
-    margin-top: 400px;   /* Espace entre l'Accueil et cette section */
+      /* Espace entre l'Accueil et cette section */
     color: white;        /* Texte blanc */
     text-align: center;  /* Centre le texte */
     box-sizing: border-box; /* Garantit que le padding n'agrandit pas la section */
