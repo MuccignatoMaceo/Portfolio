@@ -430,7 +430,7 @@ p{
 
 .new-section {
     padding: 100px 20px; /* Ajoute un espace intérieur */
-      /* Espace entre l'Accueil et cette section */
+    margin-top: 250px;   /* Espace entre l'Accueil et cette section */
     color: white;        /* Texte blanc */
     text-align: center;  /* Centre le texte */
     box-sizing: border-box; /* Garantit que le padding n'agrandit pas la section */
