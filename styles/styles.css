@@ -445,41 +445,114 @@ p{
 
 
 
-/*@media(max-width:810px){
-    .header{
+/* Ajout du responsive */
+@media (max-width: 1024px) {
+    .header-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header-menu li a {
+        font-size: 1.2rem;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header-menu {
+        flex-direction: column;
         display: none;
+        background: rgb(71, 32, 13);
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
     }
 
-    .h2{
-        font-size: 5rem;
+    .header-menu.active {
+        display: flex;
     }
 
-    .slider-content{
-        width: 90%;    
+    .header-menu li {
+        width: 100%;
+        text-align: center;
     }
 
-    .slider-content p{
-        margin-top: 20px;
+    .slider-content {
+        width: 90%;
+    }
+
+    .slider-content h1 {
+        font-size: 3rem;
+    }
+    
+    .slider-content p {
         font-size: 1.5rem;
-        text-wrap: balance;
     }
 
-    h1{
+    .flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .w40, .w60, .w50, .w32 {
+        width: 100%;
+    }
+
+    .skills img {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Responsive spécifique pour la page Oculi */
+    .sliderVideo {
+        min-height: auto;
+        aspect-ratio: 16/9;
+    }
+
+    .video-overlay video {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-box-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .text-box {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .projectsimg img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
         font-size: 2rem;
     }
 
-    .toColumn{
-        flex-direction: column;
-    }
-    .wm100{
-        width: 100%  !important;
+    .slider-content p {
+        font-size: 1.2rem;
     }
 
-    .section{
-        padding: 50px 0;
+    .header-menu li a {
+        font-size: 1rem;
+        padding: 6px 10px;
     }
 
-    .boxed{
-        max-width: 90%;
+    .social-icons img {
+        width: 40px;
+        height: 40px;
     }
-} */
+}
