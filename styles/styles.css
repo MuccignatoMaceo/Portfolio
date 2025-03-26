@@ -443,9 +443,9 @@ p{
 }
 
 .video-button-container {
-    position: absolute;
+    position: absolute !important; /* Fixe le bouton indépendamment des autres éléments */
     top: 100px; /* Place le bouton juste au-dessus de la vidéo */
-    left: 22.5%; /* Centre horizontalement */
+    left: 5vw; /* Centre horizontalement */
     transform: translateX(-50%); /* Ajuste pour que le bouton soit bien centré */
     z-index: 10;
 }

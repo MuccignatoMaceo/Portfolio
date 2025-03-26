@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macéo Muccignato | Muse</title>
+    <link rel="stylesheet" href="styles/styles.css"> <!-- Réutilise ton CSS -->
+</head>
+
+<body class="oculi-page">
+
+
+
+    <div id="Accueil" class="sliderVideo">
+        <div class="video-overlay">
+            <div class="video-button-container">
+                <a href="index.html" class="video-button"> ⬅ Go back</a>
+            </div>
+            <video autoplay loop muted playsinline>
+                <source src="img/Trailer Totem.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la vidéo.
+            </video>
+            <div class="video-text">Muse</div>
+
+        </div>
+        <div class="text-box-container">
+            <div class="text-box box-large">
+                <h3>About</h3>
+                <p></p>
+                <p class="spaced">This game is part of a year-long final-year project.
+                </p>
+                <p>Muse is a single-player narrative game where you play as Élise, a young sculptor in search of inspiration. In her childhood village explore her memories, make decisive choices in her relationships, and shape her path.
+                    Find the Muse who will bring her sculpture to life.</p>
+            </div>
+        
+            <div class="text-box box-small">
+                <h3>Project info</h3>
+                <p>Role: Gameplay Programmer</p>
+                <p>Team size: 9</p>
+                <p>TimeFrame: 9 months</p>
+                <p>Engine: Unreal</p>
+            </div>
+        </div>
+       
+    </div>
+
+    <div id="new-section" class="new-section">
+        <div class="boxed">
+            <h1>Introduction</h1>
+            <p class="spaced100">This project serves as a validation of the skills acquired throughout my training. As my first long-term project, it provided me with invaluable experience and quickly helped me develop essential production habits that I previously lacked.</p>
+            <h1 class="spaced100">Development</h1>
+            <h2>Mini game</h2>
+            <p>To break the monotony of frequent dialogues, simple 2D mini-games with light puppet animations were added.
+
+                A great example is the panic attack scene, where the player must rapidly press a button to fend off negative thoughts. Vibration and breathing sounds enhance the emotional impact.</p>
+            <p class="spaced">The majority of mini-games are made the same way. A widget or component retrieves the player's inputs to process them. For the panic crisis, bubbles appear randomly on the edges of the screen and move toward the center using a timeline (a component that can use values based on time. Perfect for a Lerp!). As more bubbles appear, the frequency and speed increase. If one reaches the center, it’s game over.</p>
+            <div class=" spaced projectsimg flex  gap40">
+                <img src="img/diagramHubert.png">
+                <img src="img/treeHubert.png">
+            </div>
+
+            <h2>Journal</h2>
+            <p>To track in-game events, the player has access to a journal containing information about past events. The journal is quite simple, consisting of two images that change based on an index corresponding to the page number. The journal is closely tied to the game's dialogue system. To explain briefly, during the writing of the dialogues, commands can be written that trigger this function if detected. Some commands add elements to the journal, such as pages or collectibles in the form of stickers.</p>
+            <p></p>
+            <p class="spaced"></p>
+            <div class=" spaced projectsimg flex  gap40">
+                <img src="img/cadran oculi.png">
+                <img src="img/concept cadran.png">
+            </div>
+
+            <h2>Difficulty</h2>
+            <p class="spaced100">The main challenge in this project was thinking long-term. Since this project is the first of its size, I couldn't afford to produce messy or poorly modular work, especially since many things were likely to change. This project helped me develop greater discipline in my work and organization—skills that I believe are essential! I also learned a lot in the first few months, particularly about building different mini-games, which gave me more flexibility in what I can produce. </p>
+            </div>
+
+            
+            <h1>TRY MUSE</h1>
+             <div class=" spaced flex gap40">
+                <div class=" realisation">
+                    <a>
+                        <img src="img/museAffiche.png">
+                        <h3>Muse (WIP)</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/app.js"></script> 
+</html>
