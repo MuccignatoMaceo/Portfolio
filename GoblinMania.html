@@ -29,6 +29,8 @@
                 <h3>About</h3>
                 <p>Goblin Mania is a personal project in development that follows the gameplay principles of Vampire Survivors.
                 </p>
+                <p>This project is carried out in my free time and aims to create a modular system to easily iterate on the improvements I want.
+                </p>
             </div>
         
             <div class="text-box box-small">
@@ -49,39 +51,28 @@
             </p>
             <h1 class="spaced100">Development</h1>
             <h2>Enemy AI</h2>
-            <p>For our horror game we needed a <strong>monster</strong> and that monster is Hubert and for Hubert we need an IA.The IA is pretty simple, he wanders into the mansion using points who are disseminate throught the game. He just pick one and goes to it using a NavMesh</p>
-            <p class="spaced">To do that, I used <strong>Blackboard and Behavior Tree</strong> for the first time—two tools in Unreal Engine that assist in creating AI.</p>
+            <p>Enemy AI is relatively simple. The most basic enemies simply rush toward the player. From there, variations can be created: some will shoot projectiles, while others will charge at the player.</p>
+            <p class="spaced">To manage enemies, a pooling system was implemented. Since it was my first time using this approach, it initially introduced some challenges, but they were quickly resolved.</p>
             <div class=" spaced projectsimg flex  gap40">
                 <img src="img/diagramHubert.png">
                 <img src="img/treeHubert.png">
             </div>
 
-            <h2>Puzzle</h2>
-            <p>During the game, the player will encounter <strong>various puzzles</strong>, including a <strong>spinning dial where they must replicate a pattern.</strong></p>
-            <p>Working on this part was pretty fun because and have some kind of challenge. we needed a challenging puzzles but easly enought to complete it in a small amount of time. </p>
-            <p class="spaced">The code behind it is simple: every ring of the dial is linked to a button that spins it. When the correct rotation is set, the puzzle is completed.</p>
-            <div class=" spaced projectsimg flex  gap40">
-                <img src="img/cadran oculi.png">
-                <img src="img/concept cadran.png">
-            </div>
-
-            <h2>Mansion</h2>
-            <p>At certain points, the furniture in the mansion will <strong>change places</strong></p>
-            <p>My task was to create a system that would help the artists working on the environment by simplifying this task.</p>
-            <p>I decided to assign <strong>tags</strong> to the props. When the game starts, every prop with a tag goes into a list, and we only display the ones with the correct tag.</p>
-            <p class="spaced">This approach led to several complications, particularly with the baking of the lights, as well as the management of various collisions and optimization issues. I learned a lot from this part of the project, and today I would simply break the manor down into several parts using <strong>Unreal's persistent level.</strong></p>
+            <h2>Upgrade</h2>
+            <p>The upgrade system is quite simple: upgrades are stored in a data table containing their information (such as whether they affect the player or projectiles).
+            <p class="spaced">When leveling up, a UI appears with three containers offering different upgrades. These upgrades are determined using an array that is shuffled at each new level. Based on the name and recipient of the upgrade, the relevant information is sent to the appropriate system.</p>
             <div class=" spaced100 projectsimg flex  gap40">
                 <img src="img/Manoir1Oculi.png">
                 <img src="img/Manoir2Oculi.png">
             </div>
 
             
-            <h1>TRY OCULI</h1>
+            <h1>Work in progress</h1>
              <div class=" spaced flex gap40">
                 <div class=" realisation">
-                    <a href="https://lucyju.itch.io/oculi" target="_blank">
-                        <img src="img/oculi.png">
-                        <h3>Oculi</h3>
+                    <a>
+                        <img src="img/goby2.png">
+                        <h3>Gobelin Mania</h3>
                     </a>
                 </div>
             </div>
